@@ -1,76 +1,42 @@
-
+import {Link} from 'react-router-dom';
 export default function Footer() {
   return (
     <footer>
-      <menu>
-        <li className="img-footer">
-          <img
+      <section>
+        <div className='img-footer'>
+        <img
             src={require("../images/footer-logo.png")}
             alt="Little Lemon logo"
           ></img>
-        </li>
-        <li className="contact">
-          <h1 className="footer-header">Navigation</h1>
-          <ul className="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a
-              href="#menu"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Menu
-            </a>
-            <a href="#reservation">Reservations</a>
-            <a href="#order">Order</a>
-            <a href="#login">Login</a>
+        </div>
+        <div>
+          <h3>Important Links</h3>
+          <ul>
+          <li><Link to="/" >Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><Link to="/reservations">Reservation</Link></li>
+        <li><Link to="/order">Order Online</Link></li>
+        <li><Link to="/login">Login</Link></li>
           </ul>
-        </li>
-
-        <li>
-          <h1 className="footer-header">Contact</h1>
-          <ul className="footer-links">
-            <li>2395 Maldove Way,</li>
-            <li>Chicago Illinois</li>
-            <br></br>
-            <li>(629)-243-6827</li>
-            <br></br>
-            <a
-              href="mailto: info@littlelemon.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              info@littlelemon.com
-            </a>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Address: <br/>2395 Maldove Way,<br/>Chicago Illinois</li>
+            <li>Phone: <br/>+123-243-6827</li>
+            <li>e-mail: <br/>info@littlelemon.com</li>
           </ul>
-        </li>
-        <li>
-          <h1 className="footer-header">Connect</h1>
-          <ul className="footer-links">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Join us!
-            </a>
+        </div>
+        <div>
+          <h3>Social Media Links</h3>
+          <ul>
+          <li><a href="#Facebook">Facebook</a></li>
+          <li><a href="#Instagram">Instagram</a></li>
+          <li><a href="#Twitter">Twitter</a></li>
           </ul>
-        </li>
-      </menu>
+        </div>
+      </section>
     </footer>
   );
 }

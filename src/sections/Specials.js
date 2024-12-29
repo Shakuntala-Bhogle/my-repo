@@ -2,13 +2,14 @@ import GreekSalad from '../images/greek salad.jpg';
 import Bruschetta from '../images/bruschetta.jpg';
 import LemonDessert from '../images/lemon dessert.jpg';
 import SpecialCard from './CardInfo/SpecialCard';
+import { Link } from 'react-router-dom';
 
 function Specials() {
     return (
         <section className="specials">
             <article className="specials-topbar">
                 <h1>This weeks specials</h1>
-                <a className="action-button" href={require('../images/Logo.jpg')} target="_blank" rel="noreferrer">Online Menu</a>
+                <Link to="/"><button>Online Menu</button></Link>
             </article>
 
             <section className="specials-cards">
